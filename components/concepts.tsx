@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import Image from "next/image"
 import { X, CheckCircle } from "lucide-react"
 
@@ -31,8 +31,6 @@ interface Document {
 export default function Concepts() {
   const [selectedConcept, setSelectedConcept] = useState<Concept | null>(null)
   const [activeTab, setActiveTab] = useState<TabType>("payment-schemes")
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
 
   const concepts: Concept[] = [
     {
@@ -174,39 +172,8 @@ export default function Concepts() {
     document.body.style.overflow = "auto"
   }
 
-  // Intersection Observer for scroll animation
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true)
-          }
-        })
-      },
-      {
-        threshold: 0.1, // Trigger when 10% of the element is visible
-        rootMargin: "0px 0px -50px 0px", // Start animation 50px before element enters viewport
-      }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
-      }
-    }
-  }, [])
-
   return (
-    <section
-      id="konsep"
-      className={`concepts-section ${isVisible ? 'animate-fade-in-up' : 'animate-hidden'}`}
-      ref={sectionRef}
-    >
+    <section id="konsep" className="concepts-section">
       <div className="container">
         <h2 className="section-title">Konsep Desain Samara Asri Wiradadi</h2>
 
@@ -231,21 +198,15 @@ export default function Concepts() {
           <div className="payment-schemes-container">
             <h3 className="payment-schemes-title">Skema Pembelian</h3>
             <div className="payment-schemes-list">
-              {paymentSchemes.map((scheme, index) => (
-                <div
-                  key={scheme.id}
-                  className={`payment-scheme-card ${isVisible ? 'animate-fade-in-up-card' : 'animate-hidden-card'}`}
-                  style={{
-                    animationDelay: isVisible ? `${index * 0.15}s` : '0s'
-                  }}
-                >
+              {paymentSchemes.map((scheme) => (
+                <div key={scheme.id} className="payment-scheme-card">
                   <div className="payment-scheme-header">
                     <h4 className="payment-scheme-title">{scheme.title}</h4>
                     {scheme.subtitle && <span className="payment-scheme-subtitle">{scheme.subtitle}</span>}
                   </div>
                   <ul className="payment-scheme-items">
-                    {scheme.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="payment-scheme-item">
+                    {scheme.items.map((item, index) => (
+                      <li key={index} className="payment-scheme-item">
                         <span className="payment-scheme-bullet">•</span>
                         <span className="payment-scheme-text">{item}</span>
                       </li>
@@ -262,14 +223,8 @@ export default function Concepts() {
           <div className="documents-container">
             <h3 className="documents-title">Dokumen Serah Terima</h3>
             <div className="documents-list">
-              {documents.map((doc, index) => (
-                <div
-                  key={doc.id}
-                  className={`document-card ${isVisible ? 'animate-fade-in-up-card' : 'animate-hidden-card'}`}
-                  style={{
-                    animationDelay: isVisible ? `${index * 0.1}s` : '0s'
-                  }}
-                >
+              {documents.map((doc) => (
+                <div key={doc.id} className="document-card">
                   <div className="document-icon">
                     {doc.completed && <CheckCircle size={32} className="document-check" />}
                   </div>

@@ -18,7 +18,7 @@ export default function SimulasiKPRTanpaBunga() {
   const cicilanPerBulan = useMemo(() => {
     if (tahun <= 0) return 0
     const bulan = tahun * 12
-
+    
     if (bunga === 0) {
       // Tanpa bunga: cicilan = pokok / bulan
       return jumlahPinjaman / bulan
@@ -34,18 +34,18 @@ export default function SimulasiKPRTanpaBunga() {
   const totalPembayaran = useMemo(() => cicilanPerBulan * tahun * 12, [cicilanPerBulan, tahun])
 
   return (
-    <section style={{
+    <section style={{ 
       width: '100%',
       padding: '48px 16px',
       backgroundColor: '#f8fafc'
     }}>
-      <div style={{
+      <div style={{ 
         maxWidth: '1200px',
         margin: '0 auto'
       }}>
         {/* Header */}
         <div style={{ marginBottom: '24px' }}>
-          <h2 style={{
+          <h2 style={{ 
             fontSize: '35px',
             fontWeight: '700',
             color: '#0f172a',
@@ -54,7 +54,7 @@ export default function SimulasiKPRTanpaBunga() {
           }}>
             Simulasi KPR
           </h2>
-          <p style={{
+          <p style={{ 
             fontSize: '20px',
             color: '#64748b',
             fontFamily: 'inherit'
@@ -64,7 +64,7 @@ export default function SimulasiKPRTanpaBunga() {
         </div>
 
         {/* Main Grid */}
-        <div style={{
+        <div style={{ 
           display: 'grid',
           gridTemplateColumns: '1fr',
           gap: '20px'
@@ -73,7 +73,7 @@ export default function SimulasiKPRTanpaBunga() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {/* Harga Properti */}
             <div>
-              <label style={{
+              <label style={{ 
                 display: 'block',
                 fontSize: '13px',
                 fontWeight: '700',
@@ -103,7 +103,7 @@ export default function SimulasiKPRTanpaBunga() {
 
             {/* Uang Muka */}
             <div>
-              <label style={{
+              <label style={{ 
                 display: 'block',
                 fontSize: '13px',
                 fontWeight: '700',
@@ -134,7 +134,7 @@ export default function SimulasiKPRTanpaBunga() {
             {/* Jangka Waktu & Suku Bunga */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
               <div>
-                <label style={{
+                <label style={{ 
                   display: 'block',
                   fontSize: '13px',
                   fontWeight: '700',
@@ -163,7 +163,7 @@ export default function SimulasiKPRTanpaBunga() {
                 />
               </div>
               <div>
-                <label style={{
+                <label style={{ 
                   display: 'block',
                   fontSize: '13px',
                   fontWeight: '700',
@@ -199,13 +199,13 @@ export default function SimulasiKPRTanpaBunga() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {/* Main Red Card - Cicilan Per Bulan */}
             <div style={{
-              backgroundColor: '#12344F',
+              backgroundColor: '#314366',
               color: '#ffffff',
               borderRadius: '16px',
               padding: '20px 24px',
               boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
             }}>
-              <p style={{
+              <p style={{ 
                 fontSize: '12px',
                 fontWeight: '600',
                 marginBottom: '6px',
@@ -214,7 +214,7 @@ export default function SimulasiKPRTanpaBunga() {
               }}>
                 Cicilan Per Bulan
               </p>
-              <p style={{
+              <p style={{ 
                 fontSize: '36px',
                 fontWeight: '800',
                 fontFamily: 'inherit',
@@ -233,7 +233,7 @@ export default function SimulasiKPRTanpaBunga() {
               padding: '16px',
               boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)'
             }}>
-              <p style={{
+              <p style={{ 
                 fontSize: '12px',
                 color: '#64748b',
                 fontWeight: '500',
@@ -242,7 +242,7 @@ export default function SimulasiKPRTanpaBunga() {
               }}>
                 Jumlah Pinjaman
               </p>
-              <p style={{
+              <p style={{ 
                 fontSize: '20px',
                 fontWeight: '700',
                 color: '#0f172a',
@@ -261,7 +261,7 @@ export default function SimulasiKPRTanpaBunga() {
               padding: '12px',
               marginTop: '4px'
             }}>
-              <p style={{
+              <p style={{ 
                 fontSize: '12px',
                 color: '#713f12',
                 margin: 0,

@@ -27,7 +27,7 @@ export default function About() {
             {/* Container gambar */}
             <div className="about-image-container">
               <Image
-                src="https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif"
+                src="https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif"
                 alt="Samara Asri Wiradadi"
                 width={600}
                 height={450}
@@ -42,7 +42,7 @@ export default function About() {
             <div className="about-content">
               <h2 className="about-title">Samara Asri Wiradadi</h2>
               <p className="about-description">
-                Berada di Dusun III, Desa Wiradadi, Sokaraja, Samara Asri Wiradadi menghadirkan perumahan Purwokerto yang ideal bagi keluarga muda. Hunian ini dirancang fungsional dengan lingkungan tertata, legalitas aman, dan akses mudah ke pusat kota, sekolah, serta fasilitas sehari-hari. 
+                Berada di Dusun III, Desa Wiradadi, Sokaraja, Samara Asri Wiradadi menghadirkan perumahan Purwokerto yang ideal bagi keluarga muda. Hunian ini dirancang fungsional dengan lingkungan tertata, legalitas aman, dan akses mudah ke pusat kota, sekolah, serta fasilitas sehari-hari. Setiap unit nyaman untuk rumah pertama, dengan desain efisien dan area hijau yang mendukung aktivitas keluarga. Di sini, setiap hari menjadi kesempatan untuk menciptakan momen berharga bersama orang-orang tercinta.
               </p>
               <div>
                 {/* Ubah Link menjadi button untuk membuka modal */}
@@ -62,19 +62,19 @@ export default function About() {
             {/* Statistik - Projects Completed */}
             <div className="about-stat-card">
               <div className="about-stat-value">1</div>
-              <div className="about-stat-label">Hunian Terbaik di Wiradadi</div>
+              <div className="about-stat-label">Perumahan Terbaik di Purwokerto</div>
             </div>
 
             {/* Statistik - Awards */}
             <div className="about-stat-card">
-              <div className="about-stat-value">100+</div>
-              <div className="about-stat-label">Keluarga Samara Asri Wiradadi</div>
+              <div className="about-stat-value">500+</div>
+              <div className="about-stat-label">Keluarga Sapphire</div>
             </div>
 
             {/* Statistik - Satisfied Clients */}
             <div className="about-stat-card">
-              <div className="about-stat-value">24</div>
-              <div className="about-stat-label">Jam Keamanan One-Gate</div>
+              <div className="about-stat-value">5+</div>
+              <div className="about-stat-label">CCTV Kawasan</div>
             </div>
 
             {/* Statistik - Years of Experience */}
@@ -97,7 +97,7 @@ export default function About() {
               <h2 className="modal-title">Samara Asri Wiradadi</h2>
               <div className="modal-image">
                 <Image
-                  src="https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif"
+                  src="https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif"
                   alt="Samara Asri Wiradadi"
                   width={700}
                   height={400}
@@ -106,7 +106,7 @@ export default function About() {
               </div>
               <div className="modal-description">
                 <p>
-                  Berada di Dusun III, Desa Wiradadi, Sokaraja, Samara Asri Wiradadi menghadirkan perumahan Purwokerto yang ideal bagi keluarga muda. Hunian ini dirancang fungsional dengan lingkungan tertata, legalitas aman, dan akses mudah ke pusat kota, sekolah, serta fasilitas sehari-hari. Setiap unit nyaman untuk rumah pertama, dengan desain efisien dan area hijau yang mendukung aktivitas keluarga.
+                  Berada di Dusun III, Desa Wiradadi, Sokaraja, Samara Asri Wiradadi menghadirkan perumahan Purwokerto yang ideal bagi keluarga muda. Hunian ini dirancang fungsional dengan lingkungan tertata, legalitas aman, dan akses mudah ke pusat kota, sekolah, serta fasilitas sehari-hari. Setiap unit nyaman untuk rumah pertama, dengan desain efisien dan area hijau yang mendukung aktivitas keluarga. Di sini, setiap hari menjadi kesempatan untuk menciptakan momen berharga bersama orang-orang tercinta.
                 </p>
 
                 <h3 className="modal-subtitle">Keunggulan Lokasi</h3>

@@ -3,11 +3,11 @@ import { School, Hospital, TreePine, ShoppingBag } from "lucide-react"
 export default function Accessibility() {
   const facilities = [
     {
-      icon: <ShoppingBag />,
+      icon: <TreePine />,
       title: "Fasilitas Publik",
       items: [
         "2 menit dari SPBU Candimas Karangnanas",
-        "8 menit dari Terminal Bus Purwokerto",
+        "8 minutes from Terminal Bus Purwokerto.",
         "10 menit dari Taman Andhang Pangrenan",
         "15 menit dari Alun-Alun Purwokerto",
       ],
@@ -18,26 +18,18 @@ export default function Accessibility() {
       items: [
         "1 menit dari SDN Wiradadi",
         "7 menit dari SMPN 1 Sokaraja",
-        "11 menit dari SMAN 1 Sokaraja",
+        "11 menit dari  SMAN 1 Sokaraja",
       ],
     },
     {
       icon: <Hospital />,
       title: "Fasilitas Kesehatan",
-      items: [
-        "4 menit dari RS Wiradadi Husada",
-        "7 menit dari RSUD Prof. Dr. Margono Soekarjo",
-        "8 menit dari RS Orthopaedi Purwokerto",
-      ],
+      items: ["4 menit dari RS Wiradadi Husada", "7 menit dari RSUD Prof. Dr. Margono Soekarjo", "8 menit dari RS Orthopaedi Purwokerto"],
     },
     {
       icon: <ShoppingBag />,
       title: "Fasilitas Perbelanjaan",
-      items: [
-        "5 menit dari Depo Pelita Mall",
-        "11 menit dari Pasar Wage",
-        "15 menit dari Rita Supermall Purwokerto",
-      ],
+      items: ["5 minutes from Depo Pelita Mall", "11 minutes from Pasar Wage.", "15 minutes from Rita Supermall Purwokerto"],
     },
   ]
 

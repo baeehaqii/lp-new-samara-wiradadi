@@ -15,10 +15,11 @@ export default function Header() {
       <div className="container header-container">
         <Link href="/" className="header-logo">
           <Image
-            src="https://res.cloudinary.com/dx8w9qwl6/image/upload/v1757392355/samaragraha_o9mg9y.png"
-            alt="Samara Asri Wiradadi Logo"
-            width={80}
-            height={50}
+            // src="https://res.cloudinary.com/dx8w9qwl6/image/upload/w_150,h_150,c_fit,f_auto,q_auto:eco/v1757392355/sgm_v79mjj.png"
+            src="https://res.cloudinary.com/dqobwse9q/image/upload/w_150,h_150,c_fit,f_auto,q_auto:eco/Logo_samara_graha_ooyxmx.avif"
+            alt="Samara Asri Wiradadi"
+            width={60}
+            height={60}
             className="header-logo-image"
           />
         </Link>

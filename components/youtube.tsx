@@ -12,13 +12,13 @@ export default function YouTube() {
                 <div className="youtube-grid">
                     {/* Kolom Kiri - Judul dan Deskripsi */}
                     <div className="youtube-content">
-                        <h2 className="youtube-title">Subscribe Channel Samara Asri Wiradadi</h2>
+                        <h2 className="youtube-title">Subscribe Channel Sapphire Grup</h2>
                         <p className="youtube-description">
-                            Ikuti channel YouTube kami untuk mendapatkan update terbaru tentang Samara Asri Wiradadi,
+                            Ikuti channel YouTube kami untuk mendapatkan update terbaru tentang Sapphire Grup,
                             tour virtual, tips properti, dan konten menarik lainnya.
                         </p>
                         <Link
-                            href="https://www.youtube.com/@SamaraGrup"
+                            href="https://www.youtube.com/@SapphireGrup"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="youtube-button"
@@ -39,7 +39,7 @@ export default function YouTube() {
                                     position: 'relative',
                                     width: '100%',
                                     height: '400px',
-                                    backgroundImage: 'url(https://img.youtube.com/vi/anKDvO7OkMs/maxresdefault.jpg)',
+                                    backgroundImage: 'url(https://img.youtube.com/vi/TVDndFFiC54/sddefault.jpg)',
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     cursor: 'pointer',
@@ -70,7 +70,7 @@ export default function YouTube() {
                             <iframe
                                 width="100%"
                                 height="400"
-                                src="https://www.youtube.com/embed/anKDvO7OkMs?si=nqjYGy4GAkJtBVnL"
+                                src="https://www.youtube.com/embed/TVDndFFiC54?si=-zu4-JrJj6PP-oeu&autoplay=1"
                                 title="Samara Asri Wiradadi"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

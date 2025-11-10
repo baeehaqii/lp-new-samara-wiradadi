@@ -17,18 +17,18 @@ export default function Hero() {
 
   const heroSlides = [
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/Shamara_Wiaradadi_9_mmktfn.avif",
       title: "Rumah Pertama, Memulai Semua Cerita",
       description:
         "Tempat momen kecil jadi kenangan berharga untuk keluarga muda.",
     },
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
       title: "Dekat Segalanya, Hidup Lebih Ringkas",
       description: "Sekolah, belanja, dan pusat kota tinggal beberapa menit saja.",
     },
     {
-      image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825387/2_6_-_Photo.jpeg_sbnhu8.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294330/Shamara_Wiaradadi_7_igiwxf.avif",
       title: "Aman, Tertata, dan Penuh Kehangatan",
       description: "One gate system dan area hijau untuk bermain dan bersantai.",
     },
@@ -184,7 +184,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="hero-badge-text">
-              <span>100+ Keluarga Samara Asri Wiradadi</span>
+              <span>1000+ Keluarga Sapphire</span>
               <div className="hero-stars">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <span key={i} className="hero-star">

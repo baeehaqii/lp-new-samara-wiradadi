@@ -7,7 +7,6 @@ import Link from "next/link"
 import { useState, useMemo } from "react"
 import { BedDoubleIcon, BathIcon, LandPlotIcon, BadgeCheckIcon, XIcon, ZoomInIcon, ZoomOutIcon } from "./icons"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import ConstructionProgress from "./construction-progress"
 
 function formatIDR(value: number) {
   return value.toLocaleString('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 })
@@ -124,7 +123,7 @@ function SimulasiKPRContent({
               style={{
                 width: '100%',
                 padding: '10px 12px',
-                border: focusedField === 'harga' ? '2px solid #12344F' : '1px solid #e2e8f0',
+                border: focusedField === 'harga' ? '2px solid #dc2626' : '1px solid #e2e8f0',
                 borderRadius: '6px',
                 fontSize: '14px',
                 color: '#334155',
@@ -163,7 +162,7 @@ function SimulasiKPRContent({
               style={{
                 width: '100%',
                 padding: '10px 12px',
-                border: focusedField === 'dp' ? '2px solid #12344F' : '1px solid #e2e8f0',
+                border: focusedField === 'dp' ? '2px solid #dc2626' : '1px solid #e2e8f0',
                 borderRadius: '6px',
                 fontSize: '14px',
                 color: '#334155',
@@ -201,7 +200,7 @@ function SimulasiKPRContent({
                 style={{
                   width: '100%',
                   padding: '10px 12px',
-                  border: focusedField === 'tahun' ? '2px solid #12344F' : '1px solid #e2e8f0',
+                  border: focusedField === 'tahun' ? '2px solid #dc2626' : '1px solid #e2e8f0',
                   borderRadius: '6px',
                   fontSize: '14px',
                   color: '#334155',
@@ -238,7 +237,7 @@ function SimulasiKPRContent({
                 style={{
                   width: '100%',
                   padding: '10px 12px',
-                  border: focusedField === 'bunga' ? '2px solid #12344F' : '1px solid #e2e8f0',
+                  border: focusedField === 'bunga' ? '2px solid #dc2626' : '1px solid #e2e8f0',
                   borderRadius: '6px',
                   fontSize: '14px',
                   color: '#334155',
@@ -256,7 +255,7 @@ function SimulasiKPRContent({
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <div style={{
-          backgroundColor: '#12344F',
+          backgroundColor: '#314366',
           color: '#ffffff',
           borderRadius: '16px',
           padding: '20px 24px',
@@ -325,12 +324,11 @@ export default function Properties() {
   const [touchStart, setTouchStart] = useState<{ [key: number]: number }>({})
   const [isDragging, setIsDragging] = useState<{ [key: number]: boolean }>({})
   const [dragStart, setDragStart] = useState<{ [key: number]: number }>({})
-  const [modalTab, setModalTab] = useState<'detail' | 'simulasi' | 'progres'>('detail')
+  const [modalTab, setModalTab] = useState<'detail' | 'simulasi'>('detail')
   const [kprHarga, setKprHarga] = useState<string>('')
   const [kprDp, setKprDp] = useState<string>('')
   const [kprTahun, setKprTahun] = useState<string>('')
   const [kprBunga, setKprBunga] = useState<string>('')
-  const [showAllSpecs, setShowAllSpecs] = useState(false)
 
   const propertyTypes: PropertyType[] = [
     { id: "tipe-rumah", label: "Tipe Rumah", active: true },
@@ -343,91 +341,96 @@ export default function Properties() {
     {
       id: 1,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+
       ],
-      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989127/Screenshot_2025-11-01_at_16.20.48_rs7xoq.avif",
-      name: "Tipe 30/60 Standar",
-      price: "180.000.000",
+      floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296623/Screenshot_2025-11-05_054310_rbbhho.avif",
+      name: "Tipe 30 Standar",
+      price: "2XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "30",
+      area: "60",
       description:
-        "Tipe 30/60 Standar dengan luas bangunan 30 m² adalah pilihan sempurna untuk keluarga muda yang ingin memiliki rumah pertama. Desain modern dengan layout yang efisien untuk memaksimalkan setiap ruang dengan harga terjangkau.",
+        "Tipe 30/60 dengan 1 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
       certificate: "SHM",
     },
     {
       id: 2,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+
       ],
-      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989127/Screenshot_2025-11-01_at_16.20.55_x918gx.avif",
-      name: "Tipe 30/60 Model 1",
-      price: "190.000.000",
+      floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296623/Screenshot_2025-11-05_054322_vdhatu.avif",
+      name: "Tipe 30 Model 1",
+      price: "2XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "30",
+      area: "60",
       description:
-        "Tipe 30/60 Model 1 dengan luas bangunan 30 m² menawarkan varian dengan layout yang lebih fungsional. Cocok untuk keluarga muda yang mencari hunian minimalis dengan desain modern dan harga terjangkau.",
+        "Tipe 30/60 dengan 1 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
       certificate: "SHM",
     },
     {
       id: 3,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+
       ],
-      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989129/Screenshot_2025-11-01_at_16.21.21_tuspmu.avif",
-      name: "Tipe 36/66 Model 1",
-      price: "220.000.000",
+      floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296624/Screenshot_2025-11-05_054333_cu1neb.avif",
+      name: "Tipe 36 Model I",
+      price: "2XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "36",
+      area: "66",
       description:
-        "Tipe 36/66 Model 1 dengan luas bangunan 36 m² menawarkan ruang yang nyaman untuk keluarga muda. Dilengkapi dengan 2 kamar tidur dan desain modern yang optimal untuk kebutuhan keluarga dengan investasi terjangkau.",
+        "Tipe 36/66 dengan 1 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
       certificate: "SHM",
     },
     {
       id: 4,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+
       ],
-      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989128/Screenshot_2025-11-01_at_16.21.11_jok0yd.avif",
-      name: "Tipe 36/66 Model 2",
-      price: "240.000.000",
+      floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296626/Screenshot_2025-11-05_054344_jbgowf.avif",
+      name: "Tipe 36 Model II",
+      price: "2XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "36",
+      area: "66",
       description:
-        "Tipe 36/66 Model 2 dengan luas bangunan 36 m² memberikan kenyamanan maksimal dengan ruang yang lebih luas. Ideal untuk keluarga muda yang menginginkan lebih banyak ruang hidup dengan lokasi strategis dan harga terjangkau.",
+        "Tipe 36/66 dengan 1 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
       certificate: "SHM",
     },
     {
       id: 5,
       images: [
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_1_-_Photo.jpeg_sitx25.avif",
-        "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+
       ],
-      floorPlan: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989129/Screenshot_2025-11-01_at_16.21.30_vscguz.avif",
-      name: "Tipe 36/66 Model 3",
-      price: "250.000.000",
+      floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296627/Screenshot_2025-11-05_054403_mwbdhf.avif",
+      name: "Tipe 36 Model III",
+      price: "2XX.XX.XXX",
       bedrooms: 2,
       bathrooms: 1,
-      area: "36",
+      area: "66",
       description:
-        "Tipe 36/66 Model 3 dengan luas bangunan 36 m² memberikan ruang yang lebih luas untuk keluarga yang berkembang. Dirancang dengan konsep modern yang fungsional dan efisien untuk kehidupan sehari-hari yang nyaman.",
+        "Tipe 36/66 dengan 1 lantai adalah pilihan ideal untuk pasangan muda yang menginginkan rumah mewah di kawasan eksklusif. Dengan desain yang efisien, rumah ini menawarkan kenyamanan dengan harga terjangkau.",
       certificate: "SHM",
     },
   ]
 
   const siteplan = {
     id: "siteplan-1",
-    image: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761989185/Screenshot_2025-11-01_at_16.20.37_ur7dd9.avif",
+    image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294334/Update_Siteplan_Shamara_Wiradadi-01_g1c8eg.avif",
     name: "Siteplan Samara Asri Wiradadi",
     description:
-      "Masterplan perumahan Samara Asri Wiradadi yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum dengan one-gate system untuk keamanan optimal.",
+      "Masterplan perumahan Samara Asri Wiradadi yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum.",
   }
 
   const specifications = {
@@ -436,17 +439,18 @@ export default function Properties() {
     lantai: "Keramik 40×40",
     atap: "Rangka baja ringan, genteng Metal",
     kamarMandi: "Kloset jongkok, Monoblock",
-    kusenPintu: "Aluminium & Pintu Fabrikasi",
-    jendela: "Kaca",
+    kusenPintu: "Alumunium & Pintu Fabrikasi",
+    jendela: "kaca",
     plafon: "Rangka hollow, gypsum, list gypsum",
     air: "PDAM",
     listrik: "1300 watt",
   }
 
   const location = {
-    embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.9992411605567!2d109.26205457590551!3d-7.465333373591743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d000bcfd7e3%3A0x19d73edb19d43017!2sSamara%20Asri%20Wiradadi!5e0!3m2!1sen!2sid!4v1761988787791!5m2!1sen!2sid" style="width:100%; height:450px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    // embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.152090540976!2d109.1275648!3d-6.991360799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbf007c3b46cb%3A0x5da496f205d213b2!2sSapphire%20Serenity%20Slawi!5e0!3m2!1sen!2sid!4v1761065829691!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>',
+    embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.999192969976!2d109.2646295!3d-7.465338700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d000bcfd7e3%3A0x19d73edb19d43017!2sSamara%20Asri%20Wiradadi!5e0!3m2!1sid!2sid!4v1762294922608!5m2!1sid!2sid" width="120%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     name: "Denah Lokasi Samara Asri Wiradadi",
-    description: "Lokasi strategis di Wiradadi dengan akses mudah ke berbagai fasilitas pendidikan, kesehatan, pusat perbelanjaan, dan fasilitas publik.",
+    description: "Lokasi strategis di pusat kota Slawi dengan akses mudah ke berbagai fasilitas umum.",
   }
 
   interface Property {
@@ -622,7 +626,8 @@ export default function Properties() {
       <div className="container">
         <h2 className="section-title">Siteplan & Tipe Rumah</h2>
         <p className="section-subtitle">
-          Temukan rumah impian Anda di Samara Asri Wiradadi dengan berbagai tipe yang dirancang khusus untuk keluarga muda yang ingin memiliki rumah pertama dengan harga terjangkau.
+          Temukan rumah impian Anda di Samara Asri Wiradadi. Kami menawarkan berbagai tipe rumah yang dirancang untuk
+          memenuhi kebutuhan dan gaya hidup Anda.
         </p>
 
         <div className="property-type-container">
@@ -757,16 +762,17 @@ export default function Properties() {
           <div className="specifications-container">
             <div className="specifications-image">
               <Image
-                src="https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif"
+                // src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1754637084/TYPE_85_1_i718cl.png"
+                src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1762294333/shamara_1_jbfudu.avif"
                 alt="Spesifikasi Rumah"
-                width={600}
-                height={800}
+                width={60}
+                height={60}
                 style={{ objectFit: "cover", width: "100%", height: "100%" }}
               />
             </div>
             <div className="specifications-content">
               <h3 className="specifications-title">Spesifikasi Rumah</h3>
-              <div className="specifications-list" style={{ position: 'relative' }}>
+              <div className="specifications-list">
                 <div className="specification-item">
                   <span className="specification-label">Pondasi:</span>
                   <span className="specification-value">{specifications.pondasi}</span>
@@ -787,77 +793,27 @@ export default function Properties() {
                   <span className="specification-label">Kamar Mandi/WC:</span>
                   <span className="specification-value">{specifications.kamarMandi}</span>
                 </div>
-
-                {!showAllSpecs && (
-                  <div className="specification-item" style={{ position: 'relative' }}>
-                    <span className="specification-label">Kusen & Pintu:</span>
-                    <span className="specification-value">{specifications.kusenPintu}</span>
-                    <div style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      background: 'linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.8) 100%)',
-                      pointerEvents: 'none',
-                      borderRadius: 'inherit'
-                    }}></div>
-                  </div>
-                )}
-
-                {showAllSpecs && (
-                  <>
-                    <div className="specification-item">
-                      <span className="specification-label">Kusen & Pintu:</span>
-                      <span className="specification-value">{specifications.kusenPintu}</span>
-                    </div>
-                    <div className="specification-item">
-                      <span className="specification-label">Jendela:</span>
-                      <span className="specification-value">{specifications.jendela}</span>
-                    </div>
-                    <div className="specification-item">
-                      <span className="specification-label">Plafon:</span>
-                      <span className="specification-value">{specifications.plafon}</span>
-                    </div>
-                    <div className="specification-item">
-                      <span className="specification-label">Air:</span>
-                      <span className="specification-value">{specifications.air}</span>
-                    </div>
-                    <div className="specification-item">
-                      <span className="specification-label">Listrik:</span>
-                      <span className="specification-value">{specifications.listrik}</span>
-                    </div>
-                  </>
-                )}
+                <div className="specification-item">
+                  <span className="specification-label">Kusen & Pintu:</span>
+                  <span className="specification-value">{specifications.kusenPintu}</span>
+                </div>
+                <div className="specification-item">
+                  <span className="specification-label">Jendela:</span>
+                  <span className="specification-value">{specifications.jendela}</span>
+                </div>
+                <div className="specification-item">
+                  <span className="specification-label">Plafon:</span>
+                  <span className="specification-value">{specifications.plafon}</span>
+                </div>
+                <div className="specification-item">
+                  <span className="specification-label">Air:</span>
+                  <span className="specification-value">{specifications.air}</span>
+                </div>
+                <div className="specification-item">
+                  <span className="specification-label">Listrik:</span>
+                  <span className="specification-value">{specifications.listrik}</span>
+                </div>
               </div>
-
-              {!showAllSpecs && (
-                <button
-                  onClick={() => setShowAllSpecs(true)}
-                  style={{
-                    marginTop: '24px',
-                    padding: '12px 24px',
-                    backgroundColor: '#12344F',
-                    color: '#ffffff',
-                    border: 'none',
-                    borderRadius: '8px',
-                    fontSize: '14px',
-                    fontWeight: '600',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s ease',
-                    fontFamily: 'inherit',
-                    width: '100%'
-                  }}
-                  onMouseEnter={(e) => {
-                    (e.target as HTMLButtonElement).style.backgroundColor = '#030f12'
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.target as HTMLButtonElement).style.backgroundColor = '#12344F'
-                  }}
-                >
-                  Load More
-                </button>
-              )}
             </div>
           </div>
         ) : activeType === "lokasi" ? (
@@ -879,13 +835,13 @@ export default function Properties() {
               <p>{location.description}</p>
               <div className="location-button-container">
                 <Link
-                  href="https://maps.app.goo.gl/XnibvmaNjSaZzZuG8"
+                  href="https://maps.app.goo.gl/2DUg2Y2tpHTzh2ic7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="location-gmaps-button"
                 >
-                  <svg className="location-gmaps-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
+                  <svg className="location-gmaps-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" />
                   </svg>
                   Lihat Lokasi di Google Maps
                 </Link>
@@ -921,9 +877,9 @@ export default function Properties() {
                   backgroundColor: 'transparent',
                   fontSize: '14px',
                   fontWeight: modalTab === 'detail' ? '700' : '500',
-                  color: modalTab === 'detail' ? '#12344F' : '#94a3b8',
+                  color: modalTab === 'detail' ? '#314366' : '#94a3b8',
                   cursor: 'pointer',
-                  borderBottom: modalTab === 'detail' ? '2px solid #12344F' : 'none',
+                  borderBottom: modalTab === 'detail' ? '2px solid #314366' : 'none',
                   transition: 'all 0.2s',
                   fontFamily: 'inherit',
                   marginBottom: '-1px'
@@ -939,33 +895,15 @@ export default function Properties() {
                   backgroundColor: 'transparent',
                   fontSize: '14px',
                   fontWeight: modalTab === 'simulasi' ? '700' : '500',
-                  color: modalTab === 'simulasi' ? '#12344F' : '#94a3b8',
+                  color: modalTab === 'simulasi' ? '#314366' : '#94a3b8',
                   cursor: 'pointer',
-                  borderBottom: modalTab === 'simulasi' ? '2px solid #12344F' : 'none',
+                  borderBottom: modalTab === 'simulasi' ? '2px solid #314366' : 'none',
                   transition: 'all 0.2s',
                   fontFamily: 'inherit',
                   marginBottom: '-1px'
                 }}
               >
                 Simulasi KPR
-              </button>
-              <button
-                onClick={() => setModalTab('progres')}
-                style={{
-                  padding: '12px 0',
-                  border: 'none',
-                  backgroundColor: 'transparent',
-                  fontSize: '14px',
-                  fontWeight: modalTab === 'progres' ? '700' : '500',
-                  color: modalTab === 'progres' ? '#12344F' : '#94a3b8',
-                  cursor: 'pointer',
-                  borderBottom: modalTab === 'progres' ? '2px solid #12344F' : 'none',
-                  transition: 'all 0.2s',
-                  fontFamily: 'inherit',
-                  marginBottom: '-1px'
-                }}
-              >
-                Progres Pembangunan
               </button>
             </div>
 
@@ -1022,7 +960,7 @@ export default function Properties() {
 
                     <div className="modal-cta">
                       <Link
-                        href="https://wa.me/6281127010001?text=Halo,%20saya%20tertarik%20dengan%20properti%20Samara%20Asri%20Wiradadi"
+                        href="https://wa.me/62811261740?text=Halo,%20saya%20tertarik%20dengan%20properti%20Sapphire%20Serenity%20Slawi"
                         className="modal-cta-button"
                       >
                         Hubungi Kami
@@ -1030,7 +968,7 @@ export default function Properties() {
                     </div>
                   </div>
                 </>
-              ) : modalTab === 'simulasi' ? (
+              ) : (
                 <SimulasiKPRContent
                   harga={kprHarga}
                   dp={kprDp}
@@ -1041,8 +979,6 @@ export default function Properties() {
                   onTahunChange={setKprTahun}
                   onBungaChange={setKprBunga}
                 />
-              ) : (
-                <ConstructionProgress />
               )}
             </div>
           </div>

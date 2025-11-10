@@ -12,20 +12,20 @@ export default function CallToAction() {
           </p>
 
           <div className="cta-buttons">
-            <Link
-              href="https://wa.me/6281127010001?text=Halo,%20saya%20tertarik%20dengan%20properti%20Samara%20Asri%20Wiradadi"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              href="https://wa.me/6281127010001?text=Halo,%20saya%20tertarik%20dengan%20properti%20Samara%20Asri%20Wiradadi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="cta-button cta-button-primary"
             >
               <Phone className="cta-button-icon" />
               Whatsapp Kami
             </Link>
-            <Link
-              //border cta
-              href="https://wa.me/6281127010001?text=Halo,%20saya%20tertarik%20dengan%20properti%20Samara%20Asri%20Wiradadi"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+            //border cta
+              href="https://wa.me/6281127010001?text=Halo,%20saya%20tertarik%20dengan%20properti%20Samara%20Asri%20Wiradadi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="cta-button cta-button-outline"
             >
               <Percent className="cta-button-icon" />

@@ -17,8 +17,8 @@ export default function Testimonials() {
     const testimonials: Testimonial[] = [
         {
             id: 1,
-            name: "Candra K.",
-            location: "Wiradadi, Indonesia",
+            name: "Andinda Kusuma",
+            location: "Purwokerto, Indonesia",
             image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1755435664/Screenshot_2025-08-17_at_19-59-13_Sapphire_Griya_Modern_Official_Perumahan_Tegal_Slawi_Brebes_sapphiregriyamodern_Instagram_photos_and_videos_t4hycn.png",
             rating: 5,
             text: "Kawasan sangat sejuk, viewnya bagus, nyaman, dekat ke arah kota Purwokerto, rekomen.",
@@ -26,12 +26,12 @@ export default function Testimonials() {
         {
             id: 2,
             name: "Norman S.",
-            location: "Wiradadi, Indonesia",
+            location: "Purwokerto, Indonesia",
             image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1755435663/Screenshot_2025-08-17_at_20-00-42_Sapphire_Griya_Modern_Official_Perumahan_Tegal_Slawi_Brebes_sapphiregriyamodern_Instagram_photos_and_videos_ybu2pd.png",
             rating: 5,
             text: "Lingkungannya bersih, nyaman, & harga terjangkau. Cocok buat pasangan yg baru menikah.",
         },
-
+        
     ]
 
     const [currentIndex, setCurrentIndex] = useState(0)

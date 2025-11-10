@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Samara Asri Wiradadi - Hunian Modern di Wiradadi",
-  description: "Temukan properti impian Anda di Samara Asri Wiradadi, hunian modern dengan lokasi strategis di Wiradadi dengan fasilitas lengkap dan One-Gate System. Developer Kredibel, Legalitas Terjamin, Proses Mudah. Harga terjangkau.",
+  title: "Samara Asri Wiradadi",
+  description: "Temukan properti impian Anda bersama Samara Asri Wiradadi",
   icons: {
     icon: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
     shortcut: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
@@ -15,14 +15,11 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Samara Asri Wiradadi",
-    "Perumahan Wiradadi",
-    "Rumah Wiradadi",
-    "Hunian Modern Wiradadi",
-    "Properti Wiradadi",
-    "Rumah Terjangkau Wiradadi",
-    "Perumahan Terjangkau",
-    "Developer Kredibel",
-    "Legalitas Terjamin",
+    "Perumahan Slawi",
+    "Rumah Slawi",
+    "Sapphire Serenity",
+    "Rumah Tegal",
+    "Perumahan Tegal",
   ],
 }
 

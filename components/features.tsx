@@ -9,7 +9,7 @@ export default function Features() {
         "Nikmati keamanan tinggi dengan one gate system, petugas sekuriti, CCTV, dan patroli 24 jam yang siap menjaga lingkungan hunian serta memberikan rasa aman dan tenang bagi Anda dan keluarga.",
     },
     {
-      icon: <CircleMinus />,
+      icon: <Trees />,
       title: "Privasi Penghuni Terjaga",
       description:
         "Rasakan ketenangan rumah yang jauh dari kebisingan, sehingga privasi Anda dan keluarga tetap terjaga.",
@@ -31,9 +31,9 @@ export default function Features() {
   return (
     <section id="fasilitas" className="features-section">
       <div className="container">
-        <h2 className="section-title">Bukan Sekadar Rumah, Tapi Ruang Hidup yang Dirancang untuk Anda</h2>
+        <h2 className="section-title">Fasilitas Umum</h2>
         <p className="section-subtitle">
-          Paduan Hunian Modern dan Kenyamanan Alami di Kawasan Wiradadi yang Strategis
+          
         </p>
 
         <div className="features-grid">

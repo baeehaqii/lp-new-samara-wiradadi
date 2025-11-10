@@ -15,26 +15,26 @@ export default function Gallery() {
   // Data gambar-gambar yang ada di gallery
   const galleryImages = [
     {
-      src: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825386/2_4_-_Photo.jpeg_sjzwqy.avif",
+      src: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294330/Shamara_Wiaradadi_7_igiwxf.avif",
       alt: "Modern luxury home exterior",
       type: "image",
     },
     {
-      src: "https://res.cloudinary.com/dx8w9qwl6/image/upload/w_800,h_450,c_fill,f_auto,q_40/v1761825387/2_6_-_Photo.jpeg_sbnhu8.avif",
+      src: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/Shamara_Wiaradadi_9_mmktfn.avif",
       alt: "Modern luxury home pool",
       type: "image",
     },
     {
-      src: "https://www.instagram.com/reel/DN2khw-UrEC/",
+      src: "https://www.instagram.com/reel/DP5evqQkl70/",
       alt: "Instagram Reel 1",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/w_600,h_400,c_fill,f_auto,q_auto:eco/v1754637078/WhatsApp_Image_2025-06-19_at_11.00.06_o6oiez.jpg",
+      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294329/Shamara_Wiaradadi_13_grfetw.avif",
     },
     {
-      src: "https://www.instagram.com/reel/DNAe6_NTxcG/",
+      src: "https://www.instagram.com/reel/DP5evqQkl70/",
       alt: "Instagram Reel 2",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/w_600,h_400,c_fill,f_auto,q_auto:eco/v1754637078/WhatsApp_Image_2025-06-19_at_11.00.07_bvpgud.jpg",
+      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294329/Shamara_Wiaradadi_13_grfetw.avif",
     },
 
   ]
