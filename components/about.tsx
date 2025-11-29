@@ -27,7 +27,7 @@ export default function About() {
             {/* Container gambar */}
             <div className="about-image-container">
               <Image
-                src="https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif"
+                src="https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448708/Salinan_tipe_36_66_model_3_2_jng9jq.avif"
                 alt="Samara Asri Wiradadi"
                 width={600}
                 height={450}
@@ -61,20 +61,20 @@ export default function About() {
           <div className="about-stats-grid">
             {/* Statistik - Projects Completed */}
             <div className="about-stat-card">
-              <div className="about-stat-value">1</div>
-              <div className="about-stat-label">Perumahan Terbaik di Purwokerto</div>
+              <div className="about-stat-value">3</div>
+              <div className="about-stat-label">Lokasi Terbaik di Jawa Bagian Selatan</div>
             </div>
 
             {/* Statistik - Awards */}
             <div className="about-stat-card">
-              <div className="about-stat-value">500+</div>
+              <div className="about-stat-value">10.000+</div>
               <div className="about-stat-label">Keluarga Sapphire</div>
             </div>
 
             {/* Statistik - Satisfied Clients */}
             <div className="about-stat-card">
-              <div className="about-stat-value">5+</div>
-              <div className="about-stat-label">CCTV Kawasan</div>
+              <div className="about-stat-value">3</div>
+              <div className="about-stat-label">Proyek Unggulan</div>
             </div>
 
             {/* Statistik - Years of Experience */}
@@ -97,7 +97,7 @@ export default function About() {
               <h2 className="modal-title">Samara Asri Wiradadi</h2>
               <div className="modal-image">
                 <Image
-                  src="https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif"
+                  src="https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448689/Salinan_Tipe_30_50_standar_penczt.avif"
                   alt="Samara Asri Wiradadi"
                   width={700}
                   height={400}

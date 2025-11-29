@@ -345,8 +345,7 @@ export default function Properties() {
     {
       id: 1,
       images: [
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448679/Salinan_30_60_model_1_xao357.avif",
 
       ],
       floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296623/Screenshot_2025-11-05_054310_rbbhho.avif",
@@ -362,8 +361,7 @@ export default function Properties() {
     {
       id: 2,
       images: [
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448677/Salinan_30_60_model_1_2_qv9bkk.avif"
 
       ],
       floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296623/Screenshot_2025-11-05_054322_vdhatu.avif",
@@ -379,8 +377,7 @@ export default function Properties() {
     {
       id: 3,
       images: [
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448698/Salinan_tipe_36_66_model_2b_svayos.avif",
 
       ],
       floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296624/Screenshot_2025-11-05_054333_cu1neb.avif",
@@ -396,8 +393,7 @@ export default function Properties() {
     {
       id: 4,
       images: [
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448703/Salinan_tipe_36_66_model_3_1_wo5d3q.avif",
 
       ],
       floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296626/Screenshot_2025-11-05_054344_jbgowf.avif",
@@ -413,8 +409,7 @@ export default function Properties() {
     {
       id: 5,
       images: [
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294333/shamara_1_jbfudu.avif",
-        "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+        "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448703/Salinan_tipe_36_66_model_3_1_wo5d3q.avif",
 
       ],
       floorPlan: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762296627/Screenshot_2025-11-05_054403_mwbdhf.avif",
@@ -431,7 +426,7 @@ export default function Properties() {
 
   const siteplan = {
     id: "siteplan-1",
-    image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294334/Update_Siteplan_Shamara_Wiradadi-01_g1c8eg.avif",
+    image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_1080,h_1080,c_fill,f_auto,q_auto:eco/v1762294334/Update_Siteplan_Shamara_Wiradadi-01_g1c8eg.avif",
     name: "Siteplan Samara Asri Wiradadi",
     description:
       "Masterplan perumahan Samara Asri Wiradadi yang menampilkan layout, jalan, ruang terbuka hijau, dan fasilitas umum.",
@@ -766,8 +761,8 @@ export default function Properties() {
           <div className="specifications-container">
             <div className="specifications-image">
               <Image
-                // src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1754637084/TYPE_85_1_i718cl.png"
-                src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1762294333/shamara_1_jbfudu.avif"
+                src="https://res.cloudinary.com/dqobwse9q/image/upload/v1764449457/Potret_eo1bbo.avif"
+                //src="https://res.cloudinary.com/dqobwse9q/image/upload/w_500,h_350,c_fill,f_auto,q_auto:eco/v1762294333/shamara_1_jbfudu.avif"
                 alt="Spesifikasi Rumah"
                 width={60}
                 height={60}

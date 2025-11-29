@@ -31,10 +31,8 @@ export default function Features() {
   return (
     <section id="fasilitas" className="features-section">
       <div className="container">
-        <h2 className="section-title">Fasilitas Umum</h2>
-        <p className="section-subtitle">
-          
-        </p>
+        <h1 className="section-title">Akses Mudah</h1>
+        <p className="section-subtitle">Terhubung dengan Segala Kebutuhan</p>
 
         <div className="features-grid">
           {features.map((feature, index) => (
