@@ -17,18 +17,18 @@ export default function Hero() {
 
   const heroSlides = [
     {
-      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/Shamara_Wiaradadi_9_mmktfn.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448708/Salinan_tipe_36_66_model_3_2_jng9jq.avif",
       title: "Rumah Pertama, Memulai Semua Cerita",
       description:
         "Tempat momen kecil jadi kenangan berharga untuk keluarga muda.",
     },
     {
-      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294331/shamara_2_irrmt5.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448689/Salinan_Tipe_30_50_standar_penczt.avif",
       title: "Dekat Segalanya, Hidup Lebih Ringkas",
       description: "Sekolah, belanja, dan pusat kota tinggal beberapa menit saja.",
     },
     {
-      image: "https://res.cloudinary.com/dqobwse9q/image/upload/v1762294330/Shamara_Wiaradadi_7_igiwxf.avif",
+      image: "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448698/Salinan_tipe_36_66_model_2b_svayos.avif",
       title: "Aman, Tertata, dan Penuh Kehangatan",
       description: "One gate system dan area hijau untuk bermain dan bersantai.",
     },

@@ -175,7 +175,7 @@ export default function Concepts() {
   return (
     <section id="konsep" className="concepts-section">
       <div className="container">
-        <h2 className="section-title">Konsep Desain Samara Asri Wiradadi</h2>
+        {/* <h2 className="section-title">Konsep Desain Samara Asri Wiradadi</h2> */}
 
         {/* Tab Navigation */}
         <div className="concepts-tabs">
