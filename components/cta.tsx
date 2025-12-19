@@ -12,7 +12,7 @@ declare global {
 
 const nomorWhatsApp = "6287821110008";
 const pesan = "Halo, saya tertarik dengan properti Samara Asri Wiradadi";
-const linkWhatsApp= `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
+const linkWhatsApp = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
 export default function CallToAction() {
   const handleWhatsAppClick = () => {
@@ -49,21 +49,21 @@ export default function CallToAction() {
           </p>
 
           <div className="cta-buttons">
-            <Link 
-              href={linkWhatsApp} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <Link
+              href={linkWhatsApp}
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-button cta-button-primary"
               onClick={handleWhatsAppClick}
             >
               <Phone className="cta-button-icon" />
               Whatsapp Kami
             </Link>
-            <Link 
-            //border cta
+            <Link
+              //border cta
               href={linkWhatsApp}
-              target="_blank" 
-              rel="noopener noreferrer" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-button cta-button-outline"
               onClick={handlePromoClick}
             >

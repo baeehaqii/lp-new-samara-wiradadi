@@ -25,7 +25,7 @@ export default function WhatsAppFloat() {
     const nomorWhatsApp = "6287821110008";
     const pesan = "Halo, saya tertarik dengan properti Samara Asri Wiradadi";
     window.open(`https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`, "_blank");
-    
+
   }
 
   return (
