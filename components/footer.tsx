@@ -105,10 +105,10 @@ export default function Footer() {
                 <div className="footer-bottom">
                     <div className="footer-logo">
                         <Image
-                            src="https://res.cloudinary.com/dqobwse9q/image/upload/w_150,h_150,c_fit,f_auto,q_auto:eco/Logo_samara_graha_ooyxmx.avif"
+                            src="/logo/samara_graha.avif"
                             alt="Samara Asri Wiradadi"
-                            width={60}
-                            height={60}
+                            width={80}
+                            height={40}
                             className="footer-logo-image"
                         />
                     </div>

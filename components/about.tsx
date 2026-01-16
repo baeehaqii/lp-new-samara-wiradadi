@@ -27,7 +27,7 @@ export default function About() {
             {/* Container gambar */}
             <div className="about-image-container">
               <Image
-                src="https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448708/Salinan_tipe_36_66_model_3_2_jng9jq.avif"
+                src="/gallery/gallery3.avif"
                 alt="Samara Asri Wiradadi"
                 width={600}
                 height={450}
@@ -97,7 +97,7 @@ export default function About() {
               <h2 className="modal-title">Samara Asri Wiradadi</h2>
               <div className="modal-image">
                 <Image
-                  src="https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448689/Salinan_Tipe_30_50_standar_penczt.avif"
+                  src="/gallery/wallpaper2.avif"
                   alt="Samara Asri Wiradadi"
                   width={700}
                   height={400}

@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: "Samara Asri Wiradadi",
   description: "Temukan properti impian Anda bersama Samara Asri Wiradadi",
   icons: {
-    icon: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
-    shortcut: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
-    apple: "https://res.cloudinary.com/dx8w9qwl6/image/upload/v1761065068/Logo_pogacr.jpg",
+    icon: "/icon/icon.avif",
+    shortcut: "/icon/icon.avif",
+    apple: "/icon/icon.avif",
   },
   keywords: [
     "Samara Asri Wiradadi",
@@ -83,9 +83,14 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
+        <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1517244809504784&ev=PageView&noscript=1" />`,
+        }}
+        />
+        {/* <noscript>
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1517244809504784&ev=PageView&noscript=1" />`}
-        </noscript>
+        </noscript> */}
         {/* End Meta Pixel Code */}
 
         {/* TikTok Pixel Code */}

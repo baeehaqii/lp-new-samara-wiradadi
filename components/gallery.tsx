@@ -15,12 +15,12 @@ export default function Gallery() {
   // Data gambar-gambar yang ada di gallery
   const galleryImages = [
     {
-      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448698/Salinan_tipe_36_66_model_2b_svayos.avif",
+      src: "/gallery/gallery3.avif",
       alt: "Modern luxury home exterior",
       type: "image",
     },
     {
-      src: "https://res.cloudinary.com/dqobwse9q/image/upload/w_700,h_400,c_fill,f_auto,q_auto:eco/v1764448689/Salinan_Tipe_30_50_standar_penczt.avif",
+      src: "/gallery/gallery4.avif",
       alt: "Modern luxury home pool",
       type: "image",
     },
@@ -28,13 +28,13 @@ export default function Gallery() {
       src: "https://www.instagram.com/reel/DP5evqQkl70/",
       alt: "Instagram Reel 1",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/v1764449457/Potret_eo1bbo.avif",
+      thumbnail: "/gallery/gallery3.avif",
     },
     {
       src: "https://www.instagram.com/reel/DP5evqQkl70/",
       alt: "Instagram Reel 2",
       type: "video",
-      thumbnail: "https://res.cloudinary.com/dqobwse9q/image/upload/v1764449457/Potret_eo1bbo.avif",
+      thumbnail: "/gallery/gallery3.avif",
     },
 
   ]
